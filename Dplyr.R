@@ -9,6 +9,7 @@ col1 <- unique(raw_2$column 2)
 unique_raw_2 <- as.data.frame(col1)
 unique_raw_2$col3 <- unique_raw_2$col1
 
+# Joining 2 DF
 join2 <- select(
 right_join(unique_raw_1, unique_raw_2,
 by = join_by("col1")), col1, col3)
