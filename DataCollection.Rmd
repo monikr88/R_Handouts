@@ -19,3 +19,6 @@ data2 <- read_excel("~/patch/file_Name.xlsx") %>%
 
 raw_data <- read.csv("path/file_Name.csv", sep=";")
 head(raw_data)
+
+
+write.csv(df, "path\\fileName.csv", row.names=TRUE)
